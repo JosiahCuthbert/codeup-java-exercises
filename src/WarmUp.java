@@ -28,7 +28,5 @@ public class WarmUp {
         String veggie = sc.next();
 
         System.out.printf("You have %d %ss!\n\n", count, veggie);
-
-//        comment 2
     }
 }
