@@ -18,10 +18,10 @@ public class DishTools {
 
     public static void flipRecommendation(Dish dish){
         if(dish.getWouldRecommend()){
-            dish(false);
+            dish = new Dish(dish.getNameOfDish(), dish.getCostInCents(), false);
             System.out.println("Recommendation has been changed from true to false for " + dish.getNameOfDish());
         }   else if(!dish.getWouldRecommend()){
-            dish.setWouldRecommend(true);
+            dish = new Dish(dish.getNameOfDish(), dish.getCostInCents(), true);
             System.out.println("Recommendation has been changed from false to true for " + dish.getNameOfDish());
 
         }
