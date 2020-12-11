@@ -1,17 +1,17 @@
 public class Person {
 
-    private static String name;
+    private String name;
 
     public Person(String personName){
-        name = personName;
+        this.name = personName;
     }
 
     public String getName(){
-        return Person.name;
+        return this.name;
     }
 
     public void setName(String name){
-        Person.name = name;
+        this.name = name;
     }
 
     public void sayHello(){
@@ -21,13 +21,14 @@ public class Person {
 
     public static void main(String[] args){
 
-//        Person joe = new Person("Joe");
-//
-//        joe.sayHello();
-//
-//        joe.setName("Josiah");
-//
-//        joe.sayHello();
+        Person joe = new Person("Joe");
+        Person kirsten = new Person("Kirsten");
+
+        joe.sayHello();
+
+        joe.setName("Josiah");
+
+        joe.sayHello();
 
 //        Person person1 = new Person("John");
 //        Person person2 = new Person("John");

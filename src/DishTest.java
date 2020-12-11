@@ -4,6 +4,8 @@ public class DishTest {
 
         Dish dish1 = new Dish("Kung Pao Chicken", 1300, true);
 
+        Dish dish2 = new Dish("Pizza", 800, true);
+
 //        dish1.printSummary();
 
         System.out.println();
