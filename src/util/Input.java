@@ -4,19 +4,19 @@ import java.util.Scanner;
 
 public class Input {
 
-    private Scanner scanner;
+    private static Scanner scanner;
 
     public Input(){
         scanner = new Scanner(System.in);
     }
 
-    public String getString(){
-        System.out.println("Please enter a string");
+    public String getString(String sout){
+        System.out.println(sout);
         return scanner.nextLine();
     }
 
-    public boolean yesNo(){
-        System.out.println("Yes or no?");
+    public boolean yesNo(String sout){
+        System.out.println(sout);
         String input = scanner.nextLine();
         if(input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes")){
             return true;
