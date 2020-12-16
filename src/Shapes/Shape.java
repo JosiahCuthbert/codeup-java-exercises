@@ -6,26 +6,34 @@ abstract class Shape {
 
         protected double length;
         protected double width;
+//
+//        @Override
+//        public double getLength() {
+//            return length;
+//        }
+//
+//        @Override
+//        public void setLength(double length) {
+//            this.length = length;
+//        }
+//
+//        @Override
+//        public double getArea() {
+//
+//        }
+//
+//        @Override
+//        public double getPerimeter() {
+//            return 0;
+//        }
+//
+//        public Quadrilateral(double qLength, double qWidth){
 
-        @Override
-        public double getLength() {
-            return length;
-        }
-
-        @Override
-        public void setLength(double length) {
-            this.length = length;
-        }
-
-
-
-        public Quadrilateral(double qLength, double qWidth){
 
 
 
 
-
-        }
+//        }
     }
 
 }
