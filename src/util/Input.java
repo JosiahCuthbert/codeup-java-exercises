@@ -25,6 +25,23 @@ public class Input {
         }
     }
 
+//    public boolean yesNo(String sout){
+//        System.out.println(sout);
+//        String input = scanner.nextLine();
+//        boolean returnVal = false;
+//        boolean validInput = false;
+//        do {
+//            if (input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes")) {
+//                returnVal = true;
+//            } else if(input.equalsIgnoreCase("n") || input.equalsIgnoreCase("no")){
+//                returnVal = false;
+//            }else{
+//                validInput = false;
+//            }
+//        }   while(!validInput);
+//        return returnVal;
+//    }
+
     public int getInt(int min, int max){
         Boolean userContinue = true;
         int input;
@@ -41,8 +58,8 @@ public class Input {
         return input;
     }
 
-    public int getInt(){
-        System.out.println("Please enter an int");
+    public int getInt(String sout){
+        System.out.println(sout);
         return scanner.nextInt();
     }
 
