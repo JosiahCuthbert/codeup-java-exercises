@@ -6,12 +6,12 @@ public interface Measurable {
 
     double getPerimeter();
 
-    void setLength(double length);
-
-    void setWidth(double width);
-
-    double getLength();
-
-    double getWidth();
+//    void setLength(double length);
+//
+//    void setWidth(double width);
+//
+//    double getLength();
+//
+//    double getWidth();
 
 }
