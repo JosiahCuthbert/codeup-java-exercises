@@ -59,8 +59,19 @@ public class Input {
     }
 
     public int getInt(String sout){
-        System.out.println(sout);
-        return scanner.nextInt();
+        Boolean validEntry;
+        String userInt = null;
+        do {
+            try {
+                userInt = getString(sout);
+                Integer.valueOf(userInt);
+                validEntry = true;
+            } catch (Exception e) {
+                System.out.println("That is not a valid entry");
+                validEntry = false;
+            }
+        }   while(!validEntry);
+        return Integer.valueOf(userInt);
     }
 
     public double getDouble(double min, double max){
@@ -79,9 +90,20 @@ public class Input {
         return input;
     }
 
-    public double getDouble(){
-        System.out.println("Please enter a double");
-        return scanner.nextDouble();
+    public double getDouble(String sout){
+        Boolean validEntry;
+        String userDouble = null;
+        do {
+            try {
+                userDouble = getString(sout);
+                Double.valueOf(userDouble);
+                validEntry = true;
+            } catch (Exception e) {
+                System.out.println("That is not a valid entry");
+                validEntry = false;
+            }
+        }   while(!validEntry);
+        return Double.valueOf(userDouble);
     }
 //
 
