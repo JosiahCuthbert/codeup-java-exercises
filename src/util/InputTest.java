@@ -6,6 +6,8 @@ public class InputTest {
 
         Input input = new Input();
 
+        input.getDouble("please enter a double");
+
         System.out.println(input.getString("please enter a string"));
         System.out.println();
         System.out.println(input.yesNo("yes or no?"));
