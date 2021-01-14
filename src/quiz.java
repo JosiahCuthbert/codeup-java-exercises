@@ -12,7 +12,10 @@ public class quiz {
             System.out.println(num);
         }
 
-        test();
+        String[] words = {"a", "aaa", "b", "bbb", "ccc"};
+
+        wordsWithoutList(words, 3);
+
 
     }
 
@@ -45,10 +48,6 @@ public class quiz {
 
     }
 
-    public static void test(){
-        String test = "test";
-        System.out.println(test.length());
-    }
 
     public int wordsCount(String[] words, int len) {
         int count = 0;
@@ -58,6 +57,17 @@ public class quiz {
             }
         }
         return count;
+    }
+
+
+    public static List wordsWithoutList(String[] words, int len) {
+        ArrayList<String> output = new ArrayList<>();
+        for(String word : words){
+            if(word.length() != len){
+                output.add(word);
+            }
+        }
+        return output;
     }
 
 
