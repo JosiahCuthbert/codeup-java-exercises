@@ -88,7 +88,7 @@ public class quiz {
     }
 
     public static Boolean isEndy(int n){
-        return (n >= 0 && n <= 10) || (n >= 90 && n <= 100);
+        return (n >= 5 && n <= 10) || (n >= 90 && n <= 100);
     }
 
 //    why doesnt github recognize non-main commits?!?
