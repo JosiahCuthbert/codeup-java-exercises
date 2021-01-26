@@ -42,6 +42,7 @@ public class Input {
 //        return returnVal;
 //    }
 
+
     public int getInt(int min, int max){
         Boolean userContinue = true;
         int input;
