@@ -8,13 +8,19 @@ public class quiz {
         int[] arr1 = {-1, 3, 8, 2, 9, 5};
         int[] arr2 = {4, 1, 2, 10, 5, 20};
 
-        for(int num : closest(arr1, arr2, 24)){
+//        for(int num : closest(arr1, arr2, 24)){
+//            System.out.println(num);
+//        }
+//
+//        String[] words = {"a", "aaa", "b", "bbb", "ccc"};
+//
+//        wordsWithoutList(words, 3);
+
+        System.out.println(isEndy(9));
+
+        for(int num : copyEndy(arr1, 3)){
             System.out.println(num);
         }
-
-        String[] words = {"a", "aaa", "b", "bbb", "ccc"};
-
-        wordsWithoutList(words, 3);
 
 
     }
@@ -69,6 +75,23 @@ public class quiz {
         }
         return output;
     }
+
+    public static int[] copyEndy(int[] nums, int count) {
+        int[] output = new int[count];
+        int index = 0;
+        for(int num : nums){
+            if(isEndy(num) && index < count){
+                output[index] = num;
+            }
+        }
+        return output;
+    }
+
+    public static Boolean isEndy(int n){
+        return (n >= 0 && n <= 10) || (n >= 90 && n <= 100);
+    }
+
+//    why doesnt github recognize non-main commits?!?
 
 
 }
